@@ -1,0 +1,11 @@
+TODO：
+
+- 使用阿里数据源，完成SQL监控配置
+- 使用Velocity，完成实体类的crud操作的自动生成
+- 使用Velocity, 实现相应的配置文件的自动生成
+- struct零配置
+- hibernate零配置
+- 整合Spring中的QUARZ，完成定时任务模块的快速设计
+- 封装分页操作
+- 封装对MYSQL的JDBCTemplate增加灵活性
+
