@@ -8,7 +8,7 @@
 <title>人员添加</title>
 </head>
 <body>
-	<form action="action_add.action" namespace="/person" method="post">
+	<form action="add.action" namespace="/person" method="post">
 		姓名：<input type="text" name="person.name"/>
 		<input type="submit" value="添加"/>
 	<form>

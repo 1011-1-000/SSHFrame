@@ -20,17 +20,7 @@
 <!-- 	这个是指action类由spring进行创建 -->
 	<constant name="struts.objectFactory" value="spring"/>
 <!-- 	上传文件大小 -->
-	<constant name="struts.multipart.maxSize" value="1024000000000"/> 
-	
-	<package name="person" namespace="/person" extends="struts-default">
-		<global-results>
-			<result name = "message">/person/message.jsp</result>
-		</global-results>
-		<action name="action_*" class="personList" method="{1}">
-			<result name="list">/person/personlist.jsp</result>
-<!-- 			<result name="add">/page/addperson.jsp</result> -->
-			<result name="edit">/person/editperson.jsp</result>
-		</action>
-	</package>
-
+	<constant name="struts.multipart.maxSize" value="1024000000000"/>
+<!-- 	修改原plugin中的结果路径，改成符合我个人习惯的位置 -->
+	<constant name="struts.convention.result.path" value="/"/>
 </struts>

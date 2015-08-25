@@ -10,7 +10,7 @@
 <body>
 	<c:set var="persons" value="${persons}" />
 	<c:forEach items="${persons}" var="person"> 
-		id=${person.id},name=${person.name } <a href="action_editForm.action?id=${person.id }">编辑</a><br/>
+		id=${person.id},name=${person.name } <a href="editForm.action?id=${person.id }">编辑</a><br/>
 	</c:forEach>
 	<a href="addperson.jsp">添加人员</a>
 </body>

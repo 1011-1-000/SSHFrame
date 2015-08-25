@@ -9,6 +9,6 @@
 </head>
 <body>
 	${message }
-	<a href="action_list.action">返回列表</a>
+	<a href="list.action">返回列表</a>
 </body>
 </html>

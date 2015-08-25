@@ -8,7 +8,7 @@
 <title>人员列表</title>
 </head>
 <body>
-	<form action="action_update.action" method="post">
+	<form action="update.action" namespace="/person" method="post">
 		ID: <input type="text" name="person.id" value="${person.id }"/><br/>
 		姓名：<input type="text" name="person.name" value="${person.name }"/><br/>
 		<input type="submit" value="提交"/><br/>

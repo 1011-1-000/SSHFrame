@@ -43,13 +43,18 @@
         </init-param>
         <init-param>
             <param-name>forceEncoding</param-name>
-            <param-value>false</param-value>
+            <param-value>true</param-value>
         </init-param>
     </filter>
     <filter-mapping>
         <filter-name>encodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    
+<!--     Spring提供的一个用来防止内存泄漏的监听器 -->
+    <listener>
+    	<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
