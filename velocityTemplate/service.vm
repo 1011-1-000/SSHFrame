@@ -1,0 +1,40 @@
+#parse("macro.vm")
+
+package org.generate.service;
+
+import java.util.List;
+import ${beanLocation}.${classNameUpCase};
+
+public interface ${classNameUpCase}Service {
+	
+	/**
+	 * 保存
+	 * @param ${classNameUpCase}
+	 */
+	public void save(${classNameUpCase} ${classNameLowCase});
+	
+	/**
+	 * 更新
+	 * @param ${classNameUpCase}
+	 */
+	public void update(${classNameUpCase} ${classNameLowCase});
+	
+	/**
+	 * 根据id得到${classNameUpCase}对象
+	 * @param id
+	 * @return
+	 */
+	public ${classNameUpCase} get${classNameUpCase}(Integer id);
+	
+	/**
+	 * 根据id删除${classNameUpCase}对象
+	 * @param id
+	 */
+	public void delete(Integer id);
+	
+	/**
+	 * 得到全部${classNameUpCase}对象
+	 * @return
+	 */
+	public List<${classNameUpCase}> get${classNameUpCase}s();
+}

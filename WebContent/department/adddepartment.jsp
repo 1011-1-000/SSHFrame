@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>人员添加</title>
+<title>部门添加</title>
 </head>
 <body>
 	<form action="add.action" namespace="/person" method="post">

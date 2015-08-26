@@ -1,0 +1,91 @@
+package org.generate.action;
+
+import java.util.List;
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.ParentPackage;
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.Results;
+import ${beanLocation}.${classNameUpCase};
+import org.generate.service.${classNameUpCase}Service;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+@ParentPackage("struts-default")
+@Namespace("/${classNameLowCase}")
+@Results({  
+	  @Result(name="list",location="${classNameLowCase}list.jsp"),
+	  @Result(name="edit",location="edit${classNameLowCase}.jsp"),
+	  @Result(name="message",location="message.jsp")
+	}) 
+public class ${classNameUpCase}Action extends ActionSupport{
+	private ${classNameUpCase}Service ${classNameLowCase}Service;
+	private String message;
+	private List<${classNameUpCase}> ${classNameLowCase}s;
+	private ${classNameUpCase} ${classNameLowCase};
+	private Integer id;
+
+	/*
+	 * 列表显示
+	 */
+	@Action("list")
+	public String list(){
+		${classNameLowCase}s = ${classNameLowCase}Service.get${classNameUpCase}s();
+		return "list";
+	}
+	@Action("add")
+	public String add(){
+		${classNameLowCase}Service.save(${classNameLowCase});
+		message = "添加成功";
+		return "message";
+	}
+	@Action("editForm")
+	public String editForm(){
+		${classNameLowCase} = ${classNameLowCase}Service.get${classNameUpCase}(id);
+		return "edit";
+	}
+	@Action("update")
+	public String update(){
+		${classNameLowCase}Service.update(${classNameLowCase});
+		message = "更新成功";
+		return "message";
+	}
+	public List<${classNameUpCase}> get${classNameUpCase}s() {
+		return ${classNameLowCase}s;
+	}
+
+	public void set${classNameUpCase}s(List<${classNameUpCase}> ${classNameLowCase}s) {
+		this.${classNameLowCase}s = ${classNameLowCase}s;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public ${classNameUpCase} get${classNameUpCase}() {
+		return ${classNameLowCase};
+	}
+
+	public void set${classNameUpCase}(${classNameUpCase} ${classNameLowCase}) {
+		this.${classNameLowCase} = ${classNameLowCase};
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+	public ${classNameUpCase}Service get${classNameUpCase}Service() {
+		return ${classNameLowCase}Service;
+	}
+	public void set${classNameUpCase}Service(${classNameUpCase}Service ${classNameLowCase}Service) {
+		this.${classNameLowCase}Service = ${classNameLowCase}Service;
+	}
+}

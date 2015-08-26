@@ -1,0 +1,41 @@
+#parse("macro.vm")
+package org.generate.service.impl;
+
+import java.util.List;
+import javax.annotation.Resource;
+import org.springframework.transaction.annotation.Transactional;
+import org.sshframe.core.orm.GenericManager;
+import ${beanLocation}.${classNameUpCase};
+import org.generate.service.${classNameUpCase}Service;
+
+@Transactional
+public class ${classNameUpCase}ServiceImpl implements ${classNameUpCase}Service{
+	
+	@Resource private GenericManager<${classNameUpCase}> genericManager;
+	
+	@Override
+	public void save(${classNameUpCase} ${classNameLowCase}) {
+		genericManager.save(${classNameLowCase});
+	}
+
+	@Override
+	public void update(${classNameUpCase} ${classNameLowCase}) {
+		genericManager.update(${classNameLowCase});
+	}
+
+	@Override
+	public ${classNameUpCase} get${classNameUpCase}(Integer id) {
+		return genericManager.getObject(${classNameUpCase}.class, id);
+	}
+
+	@Override
+	public void delete(Integer id) {
+		genericManager.delete(${classNameUpCase}.class, id);
+	}
+
+	@Override
+	public List<${classNameUpCase}> get${classNameUpCase}s() {
+		return genericManager.listAll(${classNameUpCase}.class);
+	}
+
+}

@@ -50,12 +50,16 @@ public class PersonServiceTest {
 		personService.delete(4);
 	}
 
-	@Test
+	@Ignore
 	public void testGetPerson() {
-		List<Person> list = personService.getPerson();
+		List<Person> list = personService.getPersons();
 		for(Person p : list){
 			System.out.println(p.getName());
 		}
 	}
-
+	
+	@Test
+	public void testDir(){
+		System.out.println(System.getProperty("user.dir"));
+	}
 }

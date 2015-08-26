@@ -11,6 +11,7 @@
 	<form action="update.action" namespace="/person" method="post">
 		ID: <input type="text" name="person.id" value="${person.id }"/><br/>
 		姓名：<input type="text" name="person.name" value="${person.name }"/><br/>
+		部门：<input type="text" name="person.department" value="${person.department }"/><br/>
 		<input type="submit" value="提交"/><br/>
 	</form>
 </body>

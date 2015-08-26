@@ -1,15 +1,13 @@
-package org.sshframe.sample.action;
+package org.generate.action;
 
 import java.util.List;
-
-
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
 import org.sshframe.sample.bean.Person;
-import org.sshframe.sample.service.PersonService;
+import org.generate.service.PersonService;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -18,11 +16,9 @@ import com.opensymphony.xwork2.ActionSupport;
 @Results({  
 	  @Result(name="list",location="personlist.jsp"),
 	  @Result(name="edit",location="editperson.jsp"),
-	  @Result(name="message",location="message.jsp"),
-	  @Result(name="success",location="personlist.jsp")
+	  @Result(name="message",location="message.jsp")
 	}) 
 public class PersonAction extends ActionSupport{
-	private static final long serialVersionUID = 8610899113274184210L;
 	private PersonService personService;
 	private String message;
 	private List<Person> persons;

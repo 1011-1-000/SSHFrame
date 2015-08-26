@@ -1,13 +1,11 @@
-package org.sshframe.sample.service.impl;
+package org.generate.service.impl;
 
 import java.util.List;
-
 import javax.annotation.Resource;
-
 import org.springframework.transaction.annotation.Transactional;
 import org.sshframe.core.orm.GenericManager;
 import org.sshframe.sample.bean.Person;
-import org.sshframe.sample.service.PersonService;
+import org.generate.service.PersonService;
 
 @Transactional
 public class PersonServiceImpl implements PersonService{
