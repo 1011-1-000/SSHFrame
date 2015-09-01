@@ -9,12 +9,21 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.sshframe.core.hibernate.AuditLog.AuditLogable;
+
+/**
+ * 如果需要对某个类进行审计，需要做两个事情
+ * 1、实现AuditLogable接口
+ * 2、在实体类中实现toString()方法
+ * @author Leo
+ *
+ */
 
 @Entity
-public class Person {
+public class Person implements AuditLogable{
 	private Integer id;
 	private String name;
-	private Department department;
+//	private Department department;
 	
 	public Person(){}
 	
@@ -36,14 +45,9 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "f_person_id")
-	public Department getDepartment() {
-		return department;
-	}
 
-	public void setDepartment(Department department) {
-		this.department = department;
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + "]";
 	}
 }

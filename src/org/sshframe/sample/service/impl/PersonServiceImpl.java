@@ -5,14 +5,14 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.transaction.annotation.Transactional;
-import org.sshframe.core.orm.GenericManager;
+import org.sshframe.core.hibernate.dao.GenericDao;
 import org.sshframe.sample.bean.Person;
 import org.sshframe.sample.service.PersonService;
 
 @Transactional
 public class PersonServiceImpl implements PersonService{
 	
-	@Resource private GenericManager<Person> genericManager;
+	@Resource private GenericDao genericManager;
 	
 	@Override
 	public void save(Person person) {
@@ -26,17 +26,19 @@ public class PersonServiceImpl implements PersonService{
 
 	@Override
 	public Person getPerson(Integer id) {
-		return genericManager.getObject(Person.class, id);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public void delete(Integer id) {
-		genericManager.delete(Person.class, id);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public List<Person> getPersons() {
-		return genericManager.listAll(Person.class);
+		// TODO Auto-generated method stub
+		return null;
 	}
-
 }

@@ -11,7 +11,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 http://www.springframework.org/schema/context 
 http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 >
-	
+	<aop:aspectj-autoproxy/>
 <!-- 	加载properties文件配置 -->
 	<context:property-placeholder location="classpath:jdbc.properties"/>
 	
@@ -36,6 +36,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 		<property name="packagesToScan">
 	         <list>
 	         	<value>org.sshframe.sample.bean</value>
+	         	<value>org.sshframe.core.hibernate.AuditLog</value>
 	         </list>
      	</property>
 		<property name="hibernateProperties">
@@ -58,8 +59,8 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 <!--    注释事务配置 -->
 	<tx:annotation-driven transaction-manager="txManager"/>
 	
-	<bean id = "codeUtil" class = "org.sshframe.core.codegen.CodeUtil"/>
-	<bean id = "genericManager" class = "org.sshframe.core.orm.GenericManager"/>	
+	<bean id = "auditLogAop" class = "org.sshframe.core.hibernate.AuditLog.AuditLogAop"/>
 	<bean id = "personService" class = "org.sshframe.sample.service.impl.PersonServiceImpl"/>
 	<bean id = "personList" class = "org.sshframe.sample.action.PersonAction"/>
+	<bean id = "genericDao" class = "org.sshframe.core.hibernate.dao.GenericDaoImpl"/>
 </beans>

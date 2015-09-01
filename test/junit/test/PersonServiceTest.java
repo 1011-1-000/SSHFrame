@@ -9,6 +9,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.sshframe.sample.bean.Department;
 import org.sshframe.sample.bean.Person;
 import org.sshframe.sample.service.PersonService;
 
@@ -25,9 +26,9 @@ public class PersonServiceTest {
 		}
 	}
 
-	@Ignore
+	@Test
 	public void testSave() {
-		personService.save(new Person("测试"));
+		personService.save(new Person("Leo"));
 //		personService.save(new Person("Leo2"));
 //		personService.save(new Person("Leo3"));
 	}
@@ -56,10 +57,5 @@ public class PersonServiceTest {
 		for(Person p : list){
 			System.out.println(p.getName());
 		}
-	}
-	
-	@Test
-	public void testDir(){
-		System.out.println(System.getProperty("user.dir"));
 	}
 }

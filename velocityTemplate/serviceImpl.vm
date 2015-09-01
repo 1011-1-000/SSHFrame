@@ -7,11 +7,13 @@ import org.springframework.transaction.annotation.Transactional;
 import org.sshframe.core.orm.GenericManager;
 import ${beanLocation}.${classNameUpCase};
 import org.generate.service.${classNameUpCase}Service;
+import org.apache.log4j.Logger;
 
 @Transactional
 public class ${classNameUpCase}ServiceImpl implements ${classNameUpCase}Service{
 	
 	@Resource private GenericManager<${classNameUpCase}> genericManager;
+	private static Logger logger = Logger.getLogger(${classNameUpCase}ServiceImpl.class);
 	
 	@Override
 	public void save(${classNameUpCase} ${classNameLowCase}) {

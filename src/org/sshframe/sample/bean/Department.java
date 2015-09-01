@@ -39,7 +39,7 @@ public class Department {
 	}
 	
 	@OneToOne()
-	@JoinColumn(name = "f_department_id")
+	@JoinColumn(name = "f_person_id")
 	public Person getManager() {
 		return manager;
 	}

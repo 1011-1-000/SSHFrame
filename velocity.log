@@ -219,3 +219,58 @@
 2015-08-25 20:50:51,536 - Velocimacro : VM addition rejected : generateTD : inline not allowed to replace existing VM
 2015-08-25 20:50:51,538 - Velocimacro : VM addition rejected : generateLabelAndInput : inline not allowed to replace existing VM
 2015-08-25 20:50:51,538 - ResourceManager : found macro.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:41,654 - Log4JLogChute initialized using file 'velocity.log'
+2015-08-26 18:41:41,654 - Initializing Velocity, Calling init()...
+2015-08-26 18:41:41,654 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2015-08-26 18:41:41,654 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2015-08-26 18:41:41,654 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2015-08-26 18:41:41,654 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2015-08-26 18:41:41,654 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2015-08-26 18:41:41,654 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2015-08-26 18:41:41,658 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:41,660 - Do unicode file recognition:  false
+2015-08-26 18:41:41,660 - FileResourceLoader : adding path 'E:\Users\Leo\Documents\GitHub\SSHFrame\velocityTemplate'
+2015-08-26 18:41:41,690 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2015-08-26 18:41:41,691 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2015-08-26 18:41:41,692 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2015-08-26 18:41:41,693 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2015-08-26 18:41:41,694 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2015-08-26 18:41:41,695 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2015-08-26 18:41:41,696 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2015-08-26 18:41:41,697 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2015-08-26 18:41:41,698 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2015-08-26 18:41:41,699 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2015-08-26 18:41:41,903 - Created '20' parsers.
+2015-08-26 18:41:41,907 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2015-08-26 18:41:41,908 - Velocimacro : Default library not found.
+2015-08-26 18:41:41,908 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2015-08-26 18:41:41,908 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2015-08-26 18:41:41,908 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2015-08-26 18:41:41,908 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2015-08-26 18:41:41,919 - ResourceManager : found action.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:41,922 - ResourceManager : found service.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:41,923 - ResourceManager : found serviceImpl.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:42,106 - Velocimacro : added VM generateParam: source=macro.vm
+2015-08-26 18:41:42,106 - Velocimacro : added VM toUpperCase: source=macro.vm
+2015-08-26 18:41:42,107 - Velocimacro : added VM generateTH: source=macro.vm
+2015-08-26 18:41:42,107 - Velocimacro : added VM generateTD: source=macro.vm
+2015-08-26 18:41:42,107 - Velocimacro : added VM generateLabelAndInput: source=macro.vm
+2015-08-26 18:41:42,107 - ResourceManager : found macro.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:42,110 - Velocimacro : VM addition rejected : generateParam : inline not allowed to replace existing VM
+2015-08-26 18:41:42,110 - Velocimacro : VM addition rejected : toUpperCase : inline not allowed to replace existing VM
+2015-08-26 18:41:42,110 - Velocimacro : VM addition rejected : generateTH : inline not allowed to replace existing VM
+2015-08-26 18:41:42,111 - Velocimacro : VM addition rejected : generateTD : inline not allowed to replace existing VM
+2015-08-26 18:41:42,111 - Velocimacro : VM addition rejected : generateLabelAndInput : inline not allowed to replace existing VM
+2015-08-26 18:41:42,111 - ResourceManager : found macro.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:42,123 - Velocimacro : VM addition rejected : generateParam : inline not allowed to replace existing VM
+2015-08-26 18:41:42,123 - Velocimacro : VM addition rejected : toUpperCase : inline not allowed to replace existing VM
+2015-08-26 18:41:42,123 - Velocimacro : VM addition rejected : generateTH : inline not allowed to replace existing VM
+2015-08-26 18:41:42,123 - Velocimacro : VM addition rejected : generateTD : inline not allowed to replace existing VM
+2015-08-26 18:41:42,124 - Velocimacro : VM addition rejected : generateLabelAndInput : inline not allowed to replace existing VM
+2015-08-26 18:41:42,124 - ResourceManager : found macro.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2015-08-26 18:41:42,126 - Velocimacro : VM addition rejected : generateParam : inline not allowed to replace existing VM
+2015-08-26 18:41:42,126 - Velocimacro : VM addition rejected : toUpperCase : inline not allowed to replace existing VM
+2015-08-26 18:41:42,127 - Velocimacro : VM addition rejected : generateTH : inline not allowed to replace existing VM
+2015-08-26 18:41:42,127 - Velocimacro : VM addition rejected : generateTD : inline not allowed to replace existing VM
+2015-08-26 18:41:42,127 - Velocimacro : VM addition rejected : generateLabelAndInput : inline not allowed to replace existing VM
+2015-08-26 18:41:42,127 - ResourceManager : found macro.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
